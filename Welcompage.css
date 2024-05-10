@@ -1,0 +1,106 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+#navbar
+{
+   border: 2px solid rgb(219, 150, 161); 
+   height: 75px;
+   width: 100%;
+   display: flex;
+   box-shadow: 3px 3px 3px 3px;
+}
+#left_nav
+{
+   /* border: 2px solid rgb(219, 150, 161); */
+   width: 25%;
+   height: 100%; 
+}
+#right_nav
+{
+    /* border: 2px solid rgb(219, 150, 161); */
+    width: 75%;
+    height: 100%;  
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    gap: 10px;
+}
+aside
+{
+    color: red;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: palevioletred;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 37px;
+}
+/* h1
+{
+ position: relative;
+ top: 10px;
+ left: 350px;
+ font-family:'Courier New', Courier, monospace;
+ color: red;
+} */
+#image
+{
+    position: relative;
+    top: 20px; 
+    /* left: 180px; */ 
+    animation-name: demo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    /* transition: ease all; */
+}
+a
+{
+   /* position: relative; */
+   /* left: 450px; */
+   /* top: 60px; */
+   padding: 20px;
+}
+body
+{
+    /* background-color: bisque; */
+    background-image: url(./bg1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+button
+{
+    padding: 3px;
+    background-color: pink;
+    border-radius: 20px;
+    border-color: white;
+    color:green;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+button:hover
+{
+    color: white;
+    background-color: cadetblue;
+}
+@keyframes demo 
+{
+    from
+    {
+       transform-origin: 200px;
+    }
+    to
+    {
+       transform: rotateY(180deg);
+    }
+}
