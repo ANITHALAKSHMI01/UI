@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Login.css">
+    <link rel="stylesheet" href="./CSS/Login.css">
     <title>Login</title>
 </head>
 <body>
-
-                <h1>Student Login Form</h1>
-                <form action="./Thankyou.html">
+    <script>
+        function login()
+        {
+            alert("Login successfully...")
+        }
+    </script>
+    <main>
+        <h1>Student Login Form</h1>
+                <form action="">
                     <label for="email">Email Id :</label>
-                    <input type="email" id="email" required placeholder="email"><br><br>
+                    <input type="email" id="email" required placeholder="Email"><br><br>
                     <label for="pass">Password : </label>
-                    <input type="password" id="pass" placeholder="password" required maxlength="6"><br><br>
-                    <button>Login</button>
-                    <button><a href="./Welcomepage.html" style="color: white;">Back</a></button><br>
+                    <input type="password" id="pass" placeholder="Password" required maxlength="6"><br><br>
+                    <button><p onclick="login()">Login</p></button>
+                    <button><a href="./Welcomepage.html" style="color: black;">Back</a></button><br>
                  </form>
-                 <img src="./login.webp" alt="login">
+                 <img src="./Images/login.jpg" alt="login">
+    </main>
 </body>
 </html>
