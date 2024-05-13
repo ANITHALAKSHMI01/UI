@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./Welcompage.css">
+    <link rel="stylesheet" href="./CSS/Welcompage.css">
     <title>Welcome</title>
     <style>
         input
@@ -15,27 +15,115 @@
         #image1
         {
             border-radius: 50%;
-            height: 70%;
-            width: 100px;
+            height: 50px;
+            width: 50px;
             position: relative;
             left: 70px;
             top: 10px;
         }
+         i
+        {
+            color: white;
+        }
     </style>
 </head>
 <body>
+    <script>
+        function submit()
+        {
+            alert("Submitted Succesfully...");
+        }
+    </script>
         <nav id="navbar">
-            <section id="left_nav"><img src="./images.png" alt="image" width="70px" id="image1"></section>
-                <section id="right_nav"> <aside><a href="#"><button  style="width: 100px;">Home</button></a></aside>
-                <aside> <a href="./Registration.html" target="_blank"><button style="width: 100px;">Register</button></a></aside>
-                <aside><a href="./Login.html" target="_blank"><button style="width: 100px;">Login</button></a></aside>
-                <aside>🔍<input type="search" placeholder="Search" ></aside></section> 
-                <!-- <i class="fa-solid fa-magnifying-glass" style="color: black;"></i>  -->
-                <!-- <aside></aside>-->
+            <section id="left_nav"><img src="./Images/images.png" alt="image" id="image1"></section>
+                <section id="right_nav"> <aside><a href="#">Home</a></aside>
+                <aside><a href="#about">About</a></aside>
+                <aside><a href="#branch">Courses</a></aside>
+                <aside><a href="#scroll_container">Achievements</a></aside>
+                <aside><a href="#contact">Contact Us</a></aside>
+                <aside><i class="fa-solid fa-magnifying-glass"></i><input type="search" placeholder="Search" ></aside></section> 
         </nav>
-       <div>
-        <h1>Welcome to Student Registration</h1><br><br>
-        <img src="https://lbscentre.kerala.gov.in/lbsitw/images/studadmin/student_login.png" id="image" alt="Register" height="300px" width="300px">
-       </div>
+      <section class="sec">
+        <div id="home">
+            <h1 style="align-items: center;"> <img src="./Images/college2.jpg" alt="college" width="600px" height="300px"> <br>RK College Of Engineering <br><p id="place">Kadanganeri,Tenkasi-627854</p></h1>
+            <a href="./Registration.html" target="_blank"><button style="width: 100px;">Register</button></a>
+            <a href="./Login.html" target="_blank"><button style="width: 100px;">Login</button></a>
+            <img src="https://lbscentre.kerala.gov.in/lbsitw/images/studadmin/student_login.png" id="image" alt="Register" height="400px" width="400px">
+           </div>
+      </section>
+       <section class="sec">
+        <main id="about">
+            <div class="about1"><h2 style="font-size: 30px;">About RKCOE</h2></div>
+              <aside class="left_about"><img src="./Images/campus.jpg" alt="college" class="imag" width="500px" height="500px"></aside>
+              <aside class="right-about"><p class="content">*Innovation and excellence in engineering education. <br>
+                *Empowering students for a dynamic world. <br>
+                *Industry-connected programs, experienced faculty. <br>
+                *Committed to excellence, innovation, societal impact.</p></aside>
+           </main>
+       </section>
+      <section class="row">
+        <div class="dept"><h2 style="font-size: 30px; position: relative; top: 50px;">Courses</h2></div>
+        <main id="branch">
+            <article class="col"><p>ECE</p></article>
+            <article class="col"><p>CSE</p></article>
+            <article class="col"><p>EEE</p></article>
+            <article class="col"><p>CIVIL</p></article>
+            <article class="col"><p>MECH</p></article>
+       </main>
+      </section>
+      <section class="sec">
+        <div class="achieve"><h2 style="font-size: 30px;" class="scroll">Achievements</h2></div>
+        <main id="scroll_container">
+            <img src="./Images/sport.jpeg" alt="sports" width="600px" height="500px">
+            <img src="./Images/faculty.jpg" alt="faculty" width="450px" height="500px">
+            <img src="./Images/studies.jpg" alt="student" width="540px" height="500px">
+            <img src="./Images/sympo.jpg" alt="sympo"  height="500px">
+           </main>
+      </section>
+      <section class="sec">
+        <main id="contact">
+            <h2 style="font-size: 30px;">Contact Us</h2>
+             <div class="connect">
+                <aside class="left">   
+                    <form action="">
+                        <label for="name">Name  </label>
+                        <input type="text" id="name" placeholder="Name"><br><br>
+                        <label for="email">Email </label>
+                        <input type="email" id="email"  placeholder="Email"><br><br>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="27" rows="5"></textarea>
+                        <div  id="but">
+                        <button style="width: 100px; position: relative; left: 20px; background-color: rgb(146, 230, 20); border-color: aliceblue; font-size: large;" ><p onclick="submit()">Submit</p></button>
+                        </div>
+                    </form>
+                </aside>
+                   <aside class="middle">
+                    <img src="./Images/contact.webp" alt="contact" width="200px" height="200px">
+                   </aside>
+                <aside class="right"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.509813515119!2d77.5505332!3d8.925078699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0421d001e916cd%3A0xc50082f28694b351!2sKadanganeri%2C%20Tamil%20Nadu%20627854!5e0!3m2!1sen!2sin!4v1715578565223!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </aside>
+             </div>
+           </main>
+      </section>
+      <footer>
+        <article><h3><u>Contact Info</u></h3><br>
+            <p><i class="fa-solid fa-house"></i>RK College Of Engineering <br>Kadanganeri,Tenkasi-627854</p><br>
+            <p><i class="fa-solid fa-phone"></i>+91 9876054321</p><br>
+            <p><i class="fa-solid fa-envelope"></i>rkengineering@edu.in</p>
+        </article>
+        <article><h3><u>Links</u></h3><br>
+        <a href="#about">About</a><br><br>
+        <a href="#branch">Departments</a><br><br>
+        <a href="#scroll_container">Achievements</a><br><br>
+        <a href="#contact">Contact Us</a>
+        </article>
+        <article class="icon">
+            <p><i class="fa-brands fa-facebook"></i></p>
+           <p><i class="fa-brands fa-twitter"></i></p>
+           <p><i class="fa-brands fa-linkedin"></i></p>
+          <p> <i class="fa-brands fa-youtube"></i></p>
+          <p> <i class="fa-brands fa-square-instagram"></i></p>
+        </article>
+      </footer>
 </body>
 </html>

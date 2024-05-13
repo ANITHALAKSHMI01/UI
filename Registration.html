@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Registration.css">
+    <link rel="stylesheet" href="./CSS/Registration.css">
     <title>Registration</title>
 </head>
 <style>
@@ -29,47 +29,45 @@
     }
 </style>
 <body>
+   <main>
     <div class="topic">
         <h1>Student Registration Form</h1>
     </div>
      <div id="main">
         <form action="./Thankyou.html">
-            <label for="name">Student Name :</label>
+            <label for="name">Student Name </label>
             <input type="text" id="name" placeholder=" Enter name"><br><br>
-            <label for="student">Student Id :</label>
+            <label for="student">Student Id </label>
             <input type="text" id="student" maxlength="5" placeholder="Student Id"><br><br>
-            <label for="dob">Date Of Birth : </label>
+            <label for="dob">Date Of Birth  </label>
             <input type="date" id="dob" max="2004-08-31" min="2000-01-01"><br><br>
-            <label for="gender" name="gen">Gender :</label>
+            <label for="gender" name="gen">Gender </label>
             <input type="radio" id="gender" name="gen">Female <input type="radio" id="gender" name="gen">Male <br><br>
-            <label for="email">Email Id :</label>
+            <label for="email">Email Id </label>
             <input type="email" id="email" required placeholder="Email"><br><br>
-            <label for="pass">Password : </label>
+            <label for="pass">Password  </label>
             <input type="password" id="pass" placeholder="Password" required maxlength="6"><br><br>
-            <label for="phone">Phone No :</label>
-            <input type="tel" id="phone" maxlength="10"><br><br>
-            <label for="year">Student Year : </label>
-            <select name="year" id="year" style="padding: 3px; width: 220px; border-radius: 10px;border-color: white;">
+            <label for="phone">Phone No </label>
+            <input type="tel" id="phone" maxlength="10" placeholder="Phone No"><br><br>
+            <label for="year">Student Year  </label>
+            <select name="year" id="year" style="padding: 3px; width: 220px; border-radius: 5px;border-color: white;">
                 <option value="1st">1st year</option>
                 <option value="2nd">2nd year</option>
                 <option value="3rd">3rd year</option>
                 <option value="4h">4th year</option>
             </select><br><br>
-            <label for="mark">12th Mark range : </label>
+            <label for="mark">12th Mark range </label>
             <input type="range" id="mark"><br><br>
-            <label for="lang">Languages : </label>
+            <label for="lang">Languages </label>
             <input type="checkbox">Tamil <input type="checkbox">English <input type="checkbox">Others <br><br>
-            <label for="address">Address :</label><br>
+            <label for="address">Address </label><br>
             <textarea name="address" id="address" cols="43" rows="5" placeholder="Address" style="border-color: white;"></textarea><br><br>
-            <label for="doc">Upload document :</label>
+            <label for="doc">Upload document </label>
             <input type="file" id="doc" placeholder="Upload Birth certificate"><br><br>
             <button>Register</button>
-            <button><a href="./Welcomepage.html" style="color:chocolate;">Back</a></button>
+            <button><a href="./Welcomepage.html" style="color:white;">Back</a></button>
         </form>
      </div>
-                <!-- </legend> -->
-            <!-- </fieldset>
-        </figcaption>
-    </figure> -->
+   </main>
 </body>
 </html>
