@@ -10,7 +10,7 @@
     justify-content: center;
 }
 h1{
-    color: rgb(249, 33, 105);
+    color: white;
     padding: 10px 10px 10px 0px;
     font-family:'Courier New', Courier, monospace ;
 }
@@ -26,16 +26,19 @@ h1{
     left: 320px; 
 } */
 label{
-    color: rgb(247, 6, 247);
+    color: white;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 button
 {
     padding: 5px;
     width: 158px;
-    background-color: aquamarine;
+    background-color:transparent ;
+    border-color: black;
     border-radius: 20px;
-    border-color: white;
-    color:chocolate;
+    /* border-color: white; */
+    color:white;
     font-size: 20px;
     font-family:'Times New Roman', Times, serif;
 }
@@ -46,11 +49,24 @@ button:hover
 }
 body
 {
-    background-color: #f3dde1;
+    background-color: rgb(204, 211, 218);
 }
 input
 {
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 2px;
     border-color: white;
+    opacity: 30px;
+}
+main
+{
+    border: 2px solid black;
+    background-color: #7373d2;
+    border-radius: 20px;
+    box-shadow: 3px 3px 2px 3px;
+    width: 600px;
+    height: 700px;
+    position: relative;
+    top: 50px;
+    left: 300px;
 }
